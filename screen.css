@@ -1,56 +1,58 @@
 body {
-    font-family: "Helvetica", "Roboto";
+     font-family: "Helvetica", "Roboto";
 }
 
 h1 {
-    font-size: 35pt;
-    color: #424242;
-    font-weight: 700;
     margin: 0;
+
+    font-size: 35pt;
+    font-weight: 700;
+    color: #424242;
 }
 
 h2 {
+    margin: 25px 0 0 0;
+
     font-size: 20pt;
     font-weight: 700;
-    margin: 25px 0px 0px 0px;
 }
 
 .header {
-    vertical-align: middle;
     display: inline-block;
+    vertical-align: middle;
 }
 
 .logo {
     height: 35px;
     width: 35px;
-    margin: 0px 15px 0px 0px;
+    margin: 0 15px 0 0px;
     border-radius: 0;
-
 }
 
 .top-border {
-    background-color: #424242;
+    position: absolute;
     height: 10px;
     width: 100%;
     margin: 0;
-    position: absolute;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
+
+    background-color: #424242;
 }
 
 .container {
     display: flex;
     flex-direction: column;
     width: 700px;
+    gap: 20px;
 
     /* taken from https://stackoverflow.com/a/22278778 */
     position: fixed;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
-    gap: 20px;
-
+    transform: translate(-50%, -50%);
 }
 
 .image {
@@ -60,27 +62,25 @@ h2 {
 .wide {
     display: inline-flex;
     gap: 25px;
-
 }
 
 .flex-item {
-    overflow: hidden;
     max-width: 100%;
+    overflow: hidden;
 }
 
 .narrow {
-    overflow: inherit;
     width: 50%;
     height: 350px;
-    background-color: #E9EAEC;
-
+    overflow: inherit;
     border-radius: 10px;
+
+    background-color: #E9EAEC;
 }
 
 .text {
-    padding: 0px 25px;
+    padding: 0 25px;
     line-height: 1.6em;
-
 }
 
 img {
@@ -90,17 +90,14 @@ img {
 
     object-fit: cover;
     object-position: 0 98%;
-
 }
 
 pre {
+    height: 100%;
     margin-top: -5px;
+    
     background-color: #424242;
     color: #E9EAEC;
-    height: 100%;
-}
-
-code {
     font-size: 12pt;
     line-height: 1.5em;
 }
