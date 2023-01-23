@@ -1,0 +1,106 @@
+body {
+    font-family: "Helvetica", "Roboto";
+}
+
+h1 {
+    font-size: 35pt;
+    color: #424242;
+    font-weight: 700;
+    margin: 0;
+}
+
+h2 {
+    font-size: 20pt;
+    font-weight: 700;
+    margin: 25px 0px 0px 0px;
+}
+
+.header {
+    vertical-align: middle;
+    display: inline-block;
+}
+
+.logo {
+    height: 35px;
+    width: 35px;
+    margin: 0px 15px 0px 0px;
+    border-radius: 0;
+
+}
+
+.top-border {
+    background-color: #424242;
+    height: 10px;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+
+    /* taken from https://stackoverflow.com/a/22278778 */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    gap: 20px;
+
+}
+
+.image {
+    border-radius: 10px;
+}
+
+.wide {
+    display: inline-flex;
+    gap: 25px;
+
+}
+
+.flex-item {
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.narrow {
+    overflow: inherit;
+    width: 50%;
+    height: 350px;
+    background-color: #E9EAEC;
+
+    border-radius: 10px;
+}
+
+.text {
+    padding: 0px 25px;
+    line-height: 1.6em;
+
+}
+
+img {
+    height: 190px;
+    width: 120%;
+    margin-left: -10%;
+
+    object-fit: cover;
+    object-position: 0 98%;
+
+}
+
+pre {
+    margin-top: -5px;
+    background-color: #424242;
+    color: #E9EAEC;
+    height: 100%;
+}
+
+code {
+    font-size: 12pt;
+    line-height: 1.5em;
+}
